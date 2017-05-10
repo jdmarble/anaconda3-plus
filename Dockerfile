@@ -1,7 +1,7 @@
 FROM continuumio/anaconda3:4.3.1
 
 # Install Git LFS support
-RUN curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash && \
+RUN curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash && \
     apt-get install git-lfs && \
     git lfs install
 
